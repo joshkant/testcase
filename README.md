@@ -13,15 +13,16 @@ make sure all containers are running docker ps
 ```
 
 ## Tesing set up
-Test with regular curl: **http://localhost:8081** or **http://localhost:8082** 
+Test with regular curl: **http://localhost:8081** or **http://localhost:8082** <br>
 This must return ip's list of nginx proxy pass chain of servers
 
 
 Test with milicious header in curl: <br>
 ```curl -H "X-Forwarded-For: 8.8.8.8" http://localhost:8081``` <br>
-this must still return ip's list of nginx proxy pass chain of servers but without user defined header <br>
-same test can be perfornmed on ports **8082** and **8083**:  <br>
+```curl -H "X-Forwarded-For: 8.8.8.8" http://localhost:8082``` <br>
 ```curl -H "X-Forwarded-For: milicious" http://localhost:8082``` <br>
+this must still return ip's list of nginx proxy pass chain of servers but without user defined header <br>
+
 
 
 
