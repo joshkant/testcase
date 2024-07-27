@@ -8,8 +8,8 @@ This repo contains:\
 ```git clone https://github.com/joshkant/testcase.git \
 cd testcase \
 docker-compose up -d \
-make sure all containers are running **docker ps**\```
-\
+make sure all containers are running **docker ps**
+```
 
 ## Tesing set up
 Test with regular curl: **http://localhost:8081** or **http://localhost:8082**\
